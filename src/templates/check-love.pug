@@ -1,0 +1,151 @@
+mixin cart-item(item)
+	.cart-item
+		.cart-item__wrap-ico
+			img(src=item.src, alt=item.text)
+		p.cart-item__text!= item.text
+
+-
+	const zodiacArray = [
+		{
+			src: 'img/svg/oven.svg',
+			text: 'Овен'
+		},
+		{
+			src: 'img/svg/telec.svg',
+			text: 'Телец'
+		},
+		{
+			src: 'img/svg/bliznetsyi.svg',
+			text: 'Близнецы'
+		},
+		{
+			src: 'img/svg/rak.svg',
+			text: 'Рак'
+		},
+		{
+			src: 'img/svg/lev.svg',
+			text: 'Лев'
+		},
+		{
+			src: 'img/svg/deva.svg',
+			text: 'Дева'
+		},
+		{
+			src: 'img/svg/vesyi.svg',
+			text: 'Весы'
+		},
+		{
+			src: 'img/svg/skorpion.svg',
+			text: 'Скорпион'
+		},
+		{
+			src: 'img/svg/strelets.svg',
+			text: 'Стрелец'
+		},
+		{
+			src: 'img/svg/kozerog.svg',
+			text: 'Козерог'
+		},
+		{
+			src: 'img/svg/vodoley.svg',
+			text: 'Водолей'
+		},
+		{
+			src: 'img/svg/ryibyi.svg',
+			text: 'Рыбы'
+		}
+	];
+	const monthArray = [
+		{
+			src: 'img/svg/january.svg',
+			text: 'Январь'
+		},
+		{
+			src: 'img/svg/february.svg',
+			text: 'Февраль'
+		},
+		{
+			src: 'img/svg/march.svg',
+			text: 'Март'
+		},
+		{
+			src: 'img/svg/april.svg',
+			text: 'Апрель'
+		},
+		{
+			src: 'img/svg/may.svg',
+			text: 'Май'
+		},
+		{
+			src: 'img/svg/june.svg',
+			text: 'Июнь'
+		},
+		{
+			src: 'img/svg/july.svg',
+			text: 'Июль'
+		},
+		{
+			src: 'img/svg/august.svg',
+			text: 'Август'
+		},
+		{
+			src: 'img/svg/september.svg',
+			text: 'Сентябрь'
+		},
+		{
+			src: 'img/svg/october.svg',
+			text: 'Октябрь'
+		},
+		{
+			src: 'img/svg/november.svg',
+			text: 'Ноябрь'
+		},
+		{
+			src: 'img/svg/december.svg',
+			text: 'Декабрь'
+		}
+	];
+	const timeArray = [
+		{
+			src: 'img/svg/today.svg',
+			text: 'Сегодня'
+		},
+		{
+			src: 'img/svg/week.svg',
+			text: 'Неделя'
+		},
+		{
+			src: 'img/svg/month.svg',
+			text: 'Месяц'
+		},
+		{
+			src: 'img/svg/year.svg',
+			text: 'Год'
+		}
+	];
+
+
+section.check-love
+	.container
+		.check-love__top
+			h2.check-love__title Проверьте, что вас ждет в любви
+			ul#myTab.nav.nav-tabs(role='tablist')
+				li.nav-item(role='presentation')
+					button#zodiac-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#zodiac' type='button' role='tab' aria-controls='zodiac' aria-selected='true') По зодиаку
+				li.nav-item(role='presentation')
+					button#time-tab.nav-link(data-bs-toggle='tab' data-bs-target='#time' type='button' role='tab' aria-controls='time' aria-selected='false') По времени
+				li.nav-item(role='presentation')
+					button#month-tab.nav-link(data-bs-toggle='tab' data-bs-target='#month' type='button' role='tab' aria-controls='month' aria-selected='false') По месяцам
+		#myTabContent.tab-content
+			#zodiac.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='zodiac-tab')
+				.check-love__list
+					each item in zodiacArray
+						+cart-item(item)
+			#time.tab-pane.fade(role='tabpanel' aria-labelledby='time-tab')
+				.check-love__list
+					each item in timeArray
+						+cart-item(item)
+			#month.tab-pane.fade(role='tabpanel' aria-labelledby='month-tab')
+				.check-love__list
+					each item in monthArray
+						+cart-item(item)

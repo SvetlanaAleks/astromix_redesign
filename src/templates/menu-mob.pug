@@ -1,0 +1,18 @@
+- var MENU = LANG.menu;
+mixin menu-mob(page)
+	.menu-mobile#js-mobile-menu
+		.menu-mobile__wrap
+			ul.menu-mobile__nav.nav.navbar-nav
+				li.nav-item
+					a.nav-link(href='#')!= MENU.service
+				li.nav-item
+					a.nav-link(href='#')!= MENU.horoscope
+				li.nav-item
+					a.nav-link(href='#')!= MENU.blog
+				li.nav-item.dropdown
+					a#navbarDropdown.nav-link.dropdown-toggle(href="#" role='button' data-bs-toggle='dropdown' aria-expanded='false') #{LANG.locale==='ru'?'Рус':'Eng'}
+					ul.dropdown-menu(aria-labelledby='navbarDropdown')
+						li
+							a.dropdown-item(href=url(LANG.locale ==='ru'?'en':'', `/${page}.html`)) #{LANG.locale==='ru'?'Eng':'Рус'}
+			.menu-mobile__bottom
+				a.menu-mobile__btn.btn.btn-outline-primary.js-scroll(href="#")!= LANG.btn_primary

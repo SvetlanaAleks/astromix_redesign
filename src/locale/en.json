@@ -1,0 +1,9 @@
+{
+  "locale": "en",
+  "btn_primary": "Получить гороскоп",
+  "menu": {
+    "service": "Сервисы",
+    "horoscope": "Гороскопы",
+    "blog": "Блог"
+  }
+}

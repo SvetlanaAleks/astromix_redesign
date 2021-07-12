@@ -1,0 +1,193 @@
+.navbar
+	padding-top: 60px
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: 1
+	+r(1300)
+		padding-top: 50px
+	+r(1024)
+		padding-top: 40px
+	+r(900)
+		padding-top: 30px
+	&.fixed
+		position: fixed
+		padding: 20px 0
+		backdrop-filter: blur(15px)
+	&__wrapper
+		display: flex
+		align-items: center
+		width: 100%
+		+r(900)
+			justify-content: space-between
+			.navbar-nav
+				display: none
+	&__btn
+		width: 220px
+		+r(1024)
+			width: 200px
+		+r(900)
+			display: none
+
+
+.navbar-brand
+	padding: 0
+	+r(768)
+		width: 130px
+.navbar-nav
+	display: flex
+	flex-direction: row
+	align-items: baseline
+	margin-left: auto
+	margin-right: 17px
+	+r(900)
+		display: block
+		margin: auto
+.nav
+	&-item
+		&.dropdown
+			margin-left: 61px
+		&:nth-of-type(-n+2)
+			margin-right: 40px
+		&:nth-of-type(-n+3)
+			.nav-link
+				&:focus, &:hover
+					color: #FF9E67
+					border-bottom: 1px solid #FF9E67
+		+r(1300)
+			&.dropdown
+				margin-left: 50px
+			&:nth-of-type(-n+2)
+				margin-right: 30px
+		+r(1024)
+			&.dropdown
+				margin-left: 40px
+			&:nth-of-type(-n+2)
+				margin-right: 20px
+		+r(900)
+			&.dropdown
+				margin: auto
+				margin-top: 40px
+			&:nth-of-type(-n+2)
+				margin-right: 0
+				margin-bottom: 40px
+	&-link
+		font-size: 18px
+		line-height: 24px
+		color: #2F056E
+		border-bottom: 1px solid transparentize(#FF9E67, .999)
+		padding: 0
+		transition: all .3s
+		+r(1300)
+			font-size: 16px
+		+r(900)
+			text-align: center
+			font-size: 30px
+
+
+.btn-outline-primary
+	background: rgba(255, 255, 255, 0.65)
+	border: 1px solid #2F056E
+	border-radius: 28px
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif
+	font-weight: bold
+	font-size: 14px
+	line-height: 20px
+	text-align: center
+	color: #2F056E
+	padding: 11px
+	transition: all .3s
+	&:hover
+		background: #FF9E67
+		border: 1px solid #FF9E67
+		color: #fff
+		box-shadow: 1px 12px 22px rgba(255, 158, 103, 0.25)
+
+
+
+.navbar-nav 
+	.dropdown
+		width: 62px
+		.nav-link
+			padding: 5px 10px
+			font-size: 16px
+			line-height: 24px
+			border-top-left-radius: 10px
+			border-top-right-radius: 10px
+			z-index: 3
+			position: relative
+			&:hover, &:focus
+				color: #2F056E
+			&.show
+				&:hover
+					background: #FF9E67
+					color: #fff
+		&-toggle
+			&::after
+				width: 8px
+				height: 5px
+				background: url('../img/svg/arrow_select.svg') no-repeat center
+				border: none
+				margin-left: 7px
+		&-menu
+			position: absolute
+			min-width: 62px
+			padding: 0
+			padding-top: 33px
+			top: 0px
+			z-index: 0
+			border: none
+			background: #FFFFFF
+			box-shadow: 0px 10px 30px rgba(191, 191, 232, .35)
+			border-radius: 10px
+			overflow: hidden
+			&[data-bs-popper]
+				margin: 0
+		&-item
+			padding: 5px 10px
+			font-size: 16px
+			line-height: 24px
+			transition: all .3s
+			color: #2F056E
+			&:focus, &:hover
+				background: #FF9E67
+				color: #fff
+
+
+
+
+
+.burger
+	display: none
+	+r(900)
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		justify-content: center
+		cursor: pointer
+		width: 24px
+		height: 18px
+		&__line
+			height: 2px
+			display: block
+			background-color: #2F056E
+			position: relative
+			transition: all 0.4s
+			width: 100%
+			&:nth-of-type(1)
+				top: -4px
+			&:nth-of-type(3)
+				bottom: -4px
+				width: 16px
+		&--active
+			.burger__line 
+				width: 24px
+				&:nth-of-type(1)
+					transform: rotate(45deg)
+					top: 1px
+				&:nth-of-type(2)
+					display: none
+				&:nth-of-type(3)
+					transform: rotate(-45deg)
+					bottom: 0

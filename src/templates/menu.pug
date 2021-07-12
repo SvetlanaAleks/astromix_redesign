@@ -1,0 +1,28 @@
+include menu-mob
+
+- var MENU = LANG.menu;
+
+mixin menu(page)
+	.navbar.js-fixed-menu
+		+menu-mob(page)
+		.container
+			.navbar__wrapper
+				a.navbar-brand(href=url(LANG, 'index.html'))
+					img(src="img/svg/logo.svg", alt="astromix")
+				ul.navbar-nav
+					li.nav-item
+						a.nav-link(href='#')!= MENU.service
+					li.nav-item
+						a.nav-link(href='#')!= MENU.horoscope
+					li.nav-item
+						a.nav-link(href='#')!= MENU.blog
+					li.nav-item.dropdown
+						a#navbarDropdown.nav-link.dropdown-toggle(href="#" role='button' data-bs-toggle='dropdown' aria-expanded='false') #{LANG.locale==='ru'?'Рус':'Eng'}
+						ul.dropdown-menu(aria-labelledby='navbarDropdown')
+							li
+								a.dropdown-item(href=url(LANG.locale ==='ru'?'en':'', `/${page}.html`)) #{LANG.locale==='ru'?'Eng':'Рус'}
+				button.navbar__btn.btn.btn-outline-primary!= LANG.btn_primary
+				.burger.js-burger(data-target="#js-mobile-menu")
+					.burger__line
+					.burger__line
+					.burger__line

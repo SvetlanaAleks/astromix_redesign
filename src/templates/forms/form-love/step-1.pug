@@ -1,0 +1,30 @@
+p.form-block__steps Шаг  1 
+	span / 2
+p.form-block__steps-text Заполните форму и бесплатно загляните в гороскоп
+form.form(action="/" method="post")
+	.form__row
+		p.form__label Ваш пол
+		.form__wrap-tabs
+			.form__tab.js-tab
+				i.fico.fico-male
+				p.form__text-tab Мужской
+			.form__tab.active.js-tab
+				i.fico.fico-female
+				p.form__text-tab Женский
+	.form__row
+		.form__line
+			.form__col
+				p.form__label Дата рождения
+				input.form__input(type="date", name="date" required)
+			.form__col
+				p.form__label Время
+				input.form__input(type="time", name="time" required)
+		.form__checkbox.checkbox
+			label.checkbox__label Я не знаю времени рождения
+				input.checkbox__input(type="checkbox")
+				span.checkbox__checkmark
+					i.fico.fico-check
+	.form__row
+		p.form__label Место рождения
+		select.js-select.form__input
+	button.form__btn(type="submit") Продолжить

@@ -1,0 +1,203 @@
+.reviews
+	background: #F6F0FA url('../img/svg/bg_reviews.svg') no-repeat calc(50% - 559px) 190px
+	padding: 150px 0
+	+r(1300)
+		padding: 100px 0
+	+r(900)
+		padding: 80px 0
+	+r(768)
+		background-position: calc(50% - -31px) -180px
+	+r(575)
+		padding: 60px 0
+	+r(479)
+		padding: 40px 0
+	&__title
+		text-align: center
+		margin-bottom: 15px
+		font-size: 45px
+		line-height: 55px
+		color: #2F056E
+		span
+			font-weight: 800
+			display: block
+		+r(1300)
+			font-size: 41px
+			line-height: 50px
+		+r(1024)
+			font-size: 38px
+			line-height: 140%
+		+r(768)
+			font-size: 35px
+			line-height: 130%
+			margin-bottom: 30px
+		+r(575)
+			font-size: 26px
+		+r(479)
+			font-size: 22px
+			margin-bottom: 19px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: flex-start
+		position: relative
+	&__label
+		position: absolute
+		top: 22px
+		right: 30px
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+		font-style: italic
+		font-weight: 800
+		font-size: 20px
+		line-height: 24px
+		text-transform: uppercase
+		color: #FF9E67
+		width: 203px
+		border-radius: 15px
+		background: url('../img/svg/bg_label.svg') no-repeat center
+		width: 203px
+		height: 143px
+		+r(1300)
+			font-size: 18px
+			line-height: 22px
+			width: 173px
+			height: 123px
+			background-size: 100%
+		+r(1024)
+			top: -18px
+		+r(900)
+			top: -28px
+			font-size: 16px
+			line-height: 19px
+			width: 143px
+			height: 113px
+		+r(768)
+			position: static
+			margin-bottom: 50px
+			max-width: 320px
+			width: 100%
+			background: #fff
+			border: 2px solid #FF9E67
+			border-radius: 50px
+			text-align: center
+			padding: 10px
+			height: auto
+			margin: auto
+			margin-bottom: 50px
+			br
+				display: none
+		+r(479)
+			max-width: 100%
+			margin-bottom: 36px
+
+
+.review
+	background: #FFFFFF
+	border-radius: 15px
+	padding: 30px 30px 45px
+	color: #2F056E
+	&:not(:first-of-type)
+		margin-top: 60px
+	&--main
+		box-shadow: -10px 10px 0px #B37BFC, 15px 30px 70px rgba(191, 191, 232, 0.25)
+		font-size: 24px
+		line-height: 38px
+		max-width: 100%
+		width: 100%
+		padding: 30px 30px 35px
+	&--small
+		max-width: 570px
+		width: 100%
+		font-size: 18px
+		line-height: 28px
+	&--2
+		box-shadow: 7px 7px 0px #FFA775, 15.0592px 15.0592px 150.592px rgba(191, 191, 232, 0.15)
+	&--3
+		box-shadow: -7px 7px 0px #FFD65A, 16.8639px 16.8639px 168.639px rgba(191, 191, 232, 0.15)
+	&--4
+		box-shadow: 7px 7px 0px #FDD55F, 10px 10px 100px rgba(191, 191, 232, 0.15)
+	&--5
+		box-shadow: -7px 7px 0px #BF92F8, 10px 10px 100px rgba(191, 191, 232, 0.15)
+	+r(1399)
+		&--small
+			max-width: 555px
+	+r(1300)
+		&--main
+			font-size: 22px
+			line-height: 35px
+		&--small
+			max-width: 460px
+			font-size: 17px
+			line-height: 26px
+		&:not(:first-of-type)
+			margin-top: 50px
+	+r(1024)
+		padding: 20px 30px
+		&--main
+			font-size: 20px
+			line-height: 30px
+			padding: 20px 30px
+		&--small
+			max-width: 48%
+		&:not(:first-of-type)
+			margin-top: 40px
+	+r(900)
+		&--main
+			font-size: 18px
+			line-height: 26px
+		&--small
+			font-size: 16px
+			line-height: 25px
+	+r(768)
+		&--small, &--main
+			max-width: 610px
+			margin: auto
+			padding: 30px 20px
+			font-size: 16px
+			line-height: 23px
+		&:not(:first-of-type)
+			margin-top: 0
+		+nlt
+			margin-bottom: 30px
+	+r(479)
+		&--small, &--main
+			padding: 30px
+			font-size: 15px
+		+nlt
+			margin-bottom: 20px
+	+r(374)
+		&--small, &--main
+			padding: 20px
+	&__desc
+		margin-bottom: 47px
+		+r(1300)
+			margin-bottom: 40px
+		+r(1024)
+			margin-bottom: 30px
+	&__text
+		span
+			font-weight: 800
+		+nlt
+			margin-bottom: 39px
+		+r(1300)
+			+nlt
+				margin-bottom: 30px
+		+r(1024)
+			+nlt
+				margin-bottom: 25px
+	&__bottom
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__name
+		font-weight: bold
+	&__star
+		+nlt
+			margin-right: 10px
+		+r(768)
+			width: 16px
+			+nlt
+				margin-right: 8px

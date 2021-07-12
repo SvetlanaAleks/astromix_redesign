@@ -1,0 +1,13 @@
+p.form-block__steps Шаг  2 
+	span / 2
+	a.form-block__link(href="#")
+		img(src="img/svg/arrow.svg", alt="svg")
+p.form-block__steps-text Заполните форму и бесплатно загляните в гороскоп
+form.form(action="/" method="post")
+	.form__row
+		p.form__label Ваше имя
+		input.form__input(type="text", name="name" placeholder="Введите ваше имя")
+	.form__row
+		p.form__label Ваш email
+		input.form__input(type="email", name="email" placeholder="Введите ваш email")
+	button.form__btn(type="submit")  К гороскопу

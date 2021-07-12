@@ -1,0 +1,119 @@
+.footer
+	padding-top: 100px
+	padding-bottom: 60px
+	background: #FEFEFE
+	+r(1024)
+		padding: 70px 0
+	+r(768)
+		padding: 42px 0
+	+r(575)
+		padding: 34px 0
+	&__top
+		display: flex
+		justify-content: space-between
+		margin-bottom: 61px
+		+r(900)
+			flex-wrap: wrap
+			margin-bottom: 0
+		+r(768)
+			max-width: 570px
+			width: 100%
+			margin: auto
+		+r(575)
+			max-width: 340px
+	&__bottom
+		+r(768)
+			max-width: 570px
+			width: 100%
+			margin: auto
+		+r(575)
+			max-width: 340px
+	&__list
+		+r(1024)
+			+nlt
+				margin-right: 20px
+		+r(900)
+			max-width: 100%
+			width: 50%
+			margin-bottom: 40px
+			padding-bottom: 40px
+			border-bottom: 1px solid #CCCCCC
+			+nlt
+				margin-right: 0px
+		+r(575)
+			width: 100%
+			margin-bottom: 20px
+			padding-bottom: 13px
+	&__bottom
+		display: flex
+		align-items: center
+		justify-content: space-between
+		+r(900)
+			display: block
+	&__copy
+		font-size: 16px
+		line-height: 24px
+		color: #2F056E
+		+r(1300)
+			font-size: 14px
+		+r(900)
+			margin-bottom: 15px
+		+r(768)
+			line-height: 21px
+	&__pay
+		display: flex
+		align-items: center
+		img
+			+nlt
+				margin-right: 50px
+		+r(1300)
+			img
+				+nlt
+					margin-right: 40px
+
+.list-f
+	&__item
+		font-size: 16px
+		line-height: 24px
+		color: #2F056E
+		&--main
+			font-weight: 800
+		&--social
+			display: flex
+			align-items: center
+			.list-f__link
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				background: #FF9E67
+				display: flex
+				align-items: center
+				justify-content: center
+				transition: all .3s
+				&:hover
+					text-decoration: none
+					background: #BF92F8
+					box-shadow: 0px 4px 15px rgba(191, 146, 248, 0.6)
+				+nlt
+					margin-right: 16px
+			.fico
+				color: white
+				font-size: 16px
+		+nlt
+			margin-bottom: 16px
+		&:first-child
+			margin-bottom: 24px
+		+r(1300)
+			font-size: 14px
+			line-height: 18px
+		+r(1024)
+			+nlt
+				margin-bottom: 14px
+			&:first-child
+				margin-bottom: 18px
+	&__link
+		color: #2F056E
+		text-decoration: none
+		&:hover
+			color: #2F056E
+			text-decoration: underline

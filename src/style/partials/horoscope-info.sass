@@ -1,0 +1,67 @@
+.horoscope-info
+	background: #FDFDFD
+	padding-top: 110px
+	padding-bottom: 117px
+	color: #2F056E
+	+r(1300)
+		padding: 100px 0
+	+r(900)
+		padding: 80px 0
+	+r(575)
+		padding: 60px 0
+	+r(479)
+		padding: 40px 0
+	&__photo
+		border-radius: 15px
+		margin-bottom: 70px
+		+r(1300)
+			margin-bottom: 60px
+		+r(1024)
+			width: 100%
+			height: 230px
+			+object-fit(cover)
+		+r(768)
+			margin-bottom: 36px
+		+r(575)
+			height: 185px
+		+r(479)
+			margin-bottom: 22px
+	&__wrapper
+		max-width: 770px
+		width: 100%
+		margin: auto
+		+r(1399)
+			max-width: 740px
+		+r(1300)
+			max-width: 600px
+		+r(768)
+			max-width: 570px
+	&__title
+		font-weight: 800
+		font-size: 24px
+		line-height: 34px
+		margin-bottom: 29px
+		+r(768)
+			font-size: 22px
+			line-height: 31px
+			margin-bottom: 19px
+		+r(479)
+			font-size: 16px
+			line-height: 26px
+			margin-bottom: 7px
+	&__text
+		font-size: 15px
+		line-height: 25px
+		+nlt
+			margin-bottom: 25px
+		+r(1300)
+			+nlt
+				margin-bottom: 20px
+		+r(768)
+			+nlt
+				margin-bottom: 24px
+		+r(479)
+			font-size: 14px
+			line-height: 22px
+			+nlt
+				margin-bottom: 22px
