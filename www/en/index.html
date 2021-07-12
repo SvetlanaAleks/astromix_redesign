@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <title>Astromix</title>
+  </head>
+  <body>
+    <div class="horoscope-info__desc" id="horoscope-info">
+      <p class="horoscope-info__text">Выбирая спутника жизни, мы чаще всего руководствуемся эмоциями и влечением. Такой подход не всегда оправдывает себя. Когда бурные страсти утихают, партнеры впервые смотрят друг на друга критично. Тогда-то и раскрывается истинное положение вещей – несовместимость характеров, противоположные темпераменты, разные жизненные приоритеты и цели партнеров. Как следствие – скандалы и взаимные обвинения, глубокое разочарование, переживания и болезненный разрыв. </p>
+      <p class="horoscope-info__text">Один из способов избежать неблагоприятного развития отношений – обратиться к астрологам. Гороскоп любовных отношений, составленный профессионалами, решит проблемы не только одиноких людей, но и состоящих в браке мужчин и женщин.</p>
+      <p class="horoscope-info__text">Астрология – древнейшая система человеческих знаний, способная с высокой точностью предсказать ключевые события в жизни каждого из нас. Профессиональный астролог с помощью знаний о расположении и влиянии ключевых планет Солнечной системы способен составить гороскоп любви. Это поможет скорректировать судьбу клиента, наладить отношения с партнером и выбрать оптимальные модели поведения для достижения гармонии и личного счастья.</p>
+      <p class="horoscope-info__text">На нашем сайте можно заказать любовный гороскоп онлайн. Для этого нужно знать точные даты рождения обоих партнеров. Онлайн-гороскоп даст вам ключевое понимание того, насколько вы с партнером совместимы с астрологической точки зрения. Вы узнаете, какие планеты являются ведущими для вас обоих, каким образом они влияют на личную жизнь, и как может сложиться ваша совместная судьба. Помимо этого, любовный гороскоп по натальной карте позволит определить лучшее время для знакомства и начала отношений. Знание такой информации – ваш шаг к созданию крепкого союза со своей половинкой, основанный на доверии, взаимопонимании и любви.</p>
+      <p class="horoscope-info__text">А если вы хотите получить детальный анализ и прогноз развития отношений, стоит заказать самый точный любовный гороскоп у опытного астролога-практика. Наш специалист составит натальные карты влюбленных, спрогнозирует разные варианты развития вашего романа, а также поможет преодолеть кризисы в отношениях с помощью точных астрологических прогнозов. Люди в парах лучше узнают друг друга, смогут избежать недопониманий и ссор, а также добьются полной гармонии.</p>
+      <p class="horoscope-info__text">Чтобы рассчитать любовный гороскоп отношений, нужно предоставить астрологу точную дату рождения обоих партнеров. Если точная дата неизвестна, можно воспользоваться услугой ректификации даты рождения. Точная дата нужна для определения характера, темперамента, уровня сексуальной энергии, а также совместимости конкретной пары.</p>
+      <p class="horoscope-info__text">Благодаря астрологическому прогнозу вы сможете смягчить кризисы, которые для многих пар становятся последней точкой, и добиться максимального взаимопонимания с вашим спутником жизни, наполнив жизнь любовью и счастьем.</p>
+      <p class="horoscope-info__text">Заказать гороскоп любви не составит труда – просто оставьте заявку на сайте и укажите все необходимые параметры. Профессионалы в зодиакальной области смогут рассчитать любовь по натальной карте, определить совместимость с конкретным человеком и лучше узнать свою вторую половинку. Доверьтесь астрологии и сделайте уверенный шаг навстречу вашему личному счастью!</p>
+    </div>
+        <div class="navbar js-fixed-menu">
+              <div class="menu-mobile" id="js-mobile-menu">
+                <div class="menu-mobile__wrap">
+                  <ul class="menu-mobile__nav nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Сервисы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Гороскопы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Блог</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eng</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/index.html">Рус</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="menu-mobile__bottom"><a class="menu-mobile__btn btn btn-outline-primary js-scroll" href="#">Получить гороскоп</a></div>
+                </div>
+              </div>
+          <div class="container">
+            <div class="navbar__wrapper"><a class="navbar-brand" href="/en/index.html"><img src="/img/svg/logo.svg" alt="astromix"/></a>
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Сервисы</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Гороскопы</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Блог</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eng</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/index.html">Рус</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <button class="navbar__btn btn btn-outline-primary">Получить гороскоп</button>
+              <div class="burger js-burger" data-target="#js-mobile-menu">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <section class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__info">
+            <h1 class="header__title">Любовный гороскоп</h1>
+            <p class="header__subtitle">Для женщин, которые хотят ясности в личной жизни</p>
+            <div class="header__list header__list--desc">
+              <div class="feature-item feature-item--1">
+                <div class="feature-item__icon"><img src="/img/svg/feature-1.svg" alt="feature ico"/></div>
+                <div class="feature-item__desc">
+                  <p class="feature-item__title">Реальные причины ссор и одиночества</p>
+                  <p class="feature-item__text">Эти решения помогут вам все исправить</p>
+                </div>
+              </div>
+              <div class="feature-item feature-item--2">
+                <div class="feature-item__icon"><img src="/img/svg/feature-2.svg" alt="feature ico"/></div>
+                <div class="feature-item__desc">
+                  <p class="feature-item__title">Максимальная совместимость в паре </p>
+                  <p class="feature-item__text">Проверьте свое окружение по знаку зодиака</p>
+                </div>
+              </div>
+              <div class="feature-item feature-item--3">
+                <div class="feature-item__icon"><img src="/img/svg/feature-3.svg" alt="feature ico"/></div>
+                <div class="feature-item__desc">
+                  <p class="feature-item__title">Как встретить достойного мужчину </p>
+                  <p class="feature-item__text">Узнайте, как стать желанной для него</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__form">
+            <div class="form-block">
+              <p class="form-block__text">с рекомендациями от астролога</p>
+              <div class="form-block__top">
+                <p class="form-block__title">Трудности  в&nbsp;отношениях:</p>
+                <p class="form-block__subtitle">Почему так происходит и что с этим делать?</p>
+              </div>
+              <div class="form-block__bottom">
+                <p class="form-block__steps">Шаг  1 <span>/ 2</span></p>
+                <p class="form-block__steps-text">Заполните форму и бесплатно загляните в гороскоп</p>
+                <form class="form" action="/" method="post">
+                  <div class="form__row">
+                    <p class="form__label">Ваш пол</p>
+                    <div class="form__wrap-tabs">
+                      <div class="form__tab js-tab"><i class="fico fico-male"></i>
+                        <p class="form__text-tab">Мужской</p>
+                      </div>
+                      <div class="form__tab active js-tab"><i class="fico fico-female"></i>
+                        <p class="form__text-tab">Женский</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__row">
+                    <div class="form__line">
+                      <div class="form__col">
+                        <p class="form__label">Дата рождения</p>
+                        <input class="form__input" type="date" name="date" required="required"/>
+                      </div>
+                      <div class="form__col">
+                        <p class="form__label">Время</p>
+                        <input class="form__input" type="time" name="time" required="required"/>
+                      </div>
+                    </div>
+                    <div class="form__checkbox checkbox">
+                      <label class="checkbox__label">Я не знаю времени рождения
+                        <input class="checkbox__input" type="checkbox"/><span class="checkbox__checkmark"><i class="fico fico-check"></i></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form__row">
+                    <p class="form__label">Место рождения</p>
+                    <select class="js-select form__input"></select>
+                  </div>
+                  <button class="form__btn" type="submit">Продолжить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="header__list header__list--mob">
+            <h2 class="header__title-mob">Вы узнаете:</h2>
+            <div class="feature-item feature-item--1">
+              <div class="feature-item__icon"><img src="/img/svg/feature-1.svg" alt="feature ico"/></div>
+              <div class="feature-item__desc">
+                <p class="feature-item__title">Реальные причины ссор и одиночества</p>
+                <p class="feature-item__text">Эти решения помогут вам все исправить</p>
+              </div>
+            </div>
+            <div class="feature-item feature-item--2">
+              <div class="feature-item__icon"><img src="/img/svg/feature-2.svg" alt="feature ico"/></div>
+              <div class="feature-item__desc">
+                <p class="feature-item__title">Максимальная совместимость в паре </p>
+                <p class="feature-item__text">Проверьте свое окружение по знаку зодиака</p>
+              </div>
+            </div>
+            <div class="feature-item feature-item--3">
+              <div class="feature-item__icon"><img src="/img/svg/feature-3.svg" alt="feature ico"/></div>
+              <div class="feature-item__desc">
+                <p class="feature-item__title">Как встретить достойного мужчину </p>
+                <p class="feature-item__text">Узнайте, как стать желанной для него</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container">
+        <div class="questions__center">
+          <div class="js-questions-content"></div>
+          <button class="btn btn-primary questions__btn questions__btn--desc" type="button">Получить ответы сейчас</button>
+        </div>
+        <div class="questions__list questions__list--desc">
+          <div class="questions__col">
+            <p class="question question--big question--1">Почему не складываются<span>длительные отношения?</span></p>
+            <p class="question question--small question--2">Почему я одна?<span>Что со мной не так?</span></p>
+            <p class="question question--med question--3">Как сохранить отношения <span>с партнером? Все сложно!</span></p>
+          </div>
+          <div class="questions__col">
+            <p class="question question--med question--4">Подходит ли мне мужчина,<span>который сейчас рядом?</span></p>
+            <p class="question question--small question--5">Где я встречу любовь <span>всей своей жизни?</span></p>
+            <p class="question question--big question--6">Почему вокруг нет <span>достойных мужчин?</span></p>
+          </div>
+        </div>
+        <div class="questions__list questions__list--mob">
+          <p class="question question--small question--2">Почему я одна?<span>Что со мной не так?</span></p>
+          <p class="question question--big question--1">Почему не складываются<span>длительные отношения?</span></p>
+          <p class="question question--med question--4">Подходит ли мне мужчина,<span>который сейчас рядом?</span></p>
+          <p class="question question--med question--3">Как сохранить отношения <span>с партнером? Все сложно!</span></p>
+          <p class="question question--big question--6">Почему вокруг нет <span>достойных мужчин?</span></p>
+          <p class="question question--small question--5">Где я встречу любовь <span>всей своей жизни?</span></p>
+        </div>
+        <button class="btn btn-primary questions__btn questions__btn--mob" type="button">Получить ответы сейчас</button>
+      </div>
+    </section>
+    <section class="chief-astrologer">
+      <div class="container">
+        <div class="js-chief-astrologer-title"></div>
+        <div class="chief-astrologer__content">
+          <div class="chief-astrologer__photo-wrap"><img class="chief-astrologer__photo" src="/img/elena.png" alt="Елена Лапик"/></div>
+          <div class="js-chief-astrologer-info"></div>
+        </div>
+        <h3 class="chief-astrologer__subtitle">МОИ СЕРТИФИКАТЫ</h3>
+        <div class="chief-astrologer__certificates js-certificates-mob">
+          <div class="chief-astrologer__certificate js-certificate" data-src="0"><img src="/img/certificat_1.jpg" alt="certificat"/></div>
+          <div class="chief-astrologer__certificate js-certificate" data-src="1"><img src="/img/certificat_2.jpg" alt="certificat"/></div>
+          <div class="chief-astrologer__certificate js-certificate" data-src="2"><img src="/img/certificat_3.jpg" alt="certificat"/></div>
+          <div class="chief-astrologer__certificate js-certificate" data-src="3"><img src="/img/certificat_4.jpg" alt="certificat"/></div>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container">
+        <div class="info__wrapper">
+          <div class="info__left">
+            <div class="js-info-title"></div>
+            <button class="btn btn-primary info__btn info__btn--desc" type="button">Получить гороскоп</button>
+          </div>
+          <div class="info__photo"><img src="/img/info_photo.jpg" alt="info_photo"/></div>
+          <button class="btn btn-primary info__btn info__btn--mob" type="button">Получить гороскоп</button>
+        </div>
+      </div>
+    </section>
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="js-reviews-title"></div>
+        <div class="reviews__list">
+          <div class="reviews__label"> 
+            <p>9100+ <br/>довольных клиентов</p>
+          </div>
+          <div class="review review--main" itemscope="itemscope" itemtype="https://schema.org/Review">
+            <div class="review__desc" itemprop="reviewBody">
+              <p class="review__text">Благодарю 🙏<br/>Мне было очень приятно почитать ваш, анализ. Всё в точку!!!!<br/><span>Мурашки от такой точности 😳</span></p>
+              <p class="review__text">Учту все что порекомендовали! Удачи в дальнейшем 👏</p>
+            </div>
+            <div class="review__bottom">
+              <div itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person">
+                <p class="review__name" itemprop="name">Людмила</p>
+              </div>
+              <div class="review__starts" itemprop="reviewRating" itemscope="itemscope" itemtype="https://schema.org/Rating">
+                <meta content="1" itemprop="worstRating"/><span content="5" itemprop="ratingValue"><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/></span>
+                <meta content="5" itemprop="bestRating"/>
+              </div>
+            </div>
+          </div>
+          <div class="review review--small review--2" itemscope="itemscope" itemtype="https://schema.org/Review">
+            <div class="review__desc" itemprop="reviewBody">
+              <p class="review__text">По поводу гороскопа <span>я в шоке, очень многое совпало. </span>Буду перечитывать еще раз. По поводу женской энергии согласна, я привыкла решать все сама...</p>
+            </div>
+            <div class="review__bottom">
+              <div itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person">
+                <p class="review__name" itemprop="name">Евгения</p>
+              </div>
+              <div class="review__starts" itemprop="reviewRating" itemscope="itemscope" itemtype="https://schema.org/Rating">
+                <meta content="1" itemprop="worstRating"/><span content="5" itemprop="ratingValue"><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/></span>
+                <meta content="5" itemprop="bestRating"/>
+              </div>
+            </div>
+          </div>
+          <div class="review review--small review--3" itemscope="itemscope" itemtype="https://schema.org/Review">
+            <div class="review__desc" itemprop="reviewBody">
+              <p class="review__text">Многие вещи оказались правдой, и теперь, когда я лучше знаю себя, <span>могу более гармонично выстраивать свою жизнь и отношения</span> с другими людьми. </p>
+            </div>
+            <div class="review__bottom">
+              <div itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person">
+                <p class="review__name" itemprop="name">Пенелопа</p>
+              </div>
+              <div class="review__starts" itemprop="reviewRating" itemscope="itemscope" itemtype="https://schema.org/Rating">
+                <meta content="1" itemprop="worstRating"/><span content="5" itemprop="ratingValue"><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/></span>
+                <meta content="5" itemprop="bestRating"/>
+              </div>
+            </div>
+          </div>
+          <div class="review review--small review--4" itemscope="itemscope" itemtype="https://schema.org/Review">
+            <div class="review__desc" itemprop="reviewBody">
+              <p class="review__text">Мне очень понравился любовный гороскоп и гороскоп совместимости, <span>очень точно описаны и я, и мой партнёр! </span>Спасибо за рекомендации, буду пробовать внедрять их в наши отношения!</p>
+            </div>
+            <div class="review__bottom">
+              <div itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person">
+                <p class="review__name" itemprop="name">Мариана</p>
+              </div>
+              <div class="review__starts" itemprop="reviewRating" itemscope="itemscope" itemtype="https://schema.org/Rating">
+                <meta content="1" itemprop="worstRating"/><span content="5" itemprop="ratingValue"><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/></span>
+                <meta content="5" itemprop="bestRating"/>
+              </div>
+            </div>
+          </div>
+          <div class="review review--small review--5" itemscope="itemscope" itemtype="https://schema.org/Review">
+            <div class="review__desc" itemprop="reviewBody">
+              <p class="review__text">Доброго времени суток, Елена! Я в восторге от гороскопа. Даже не ожидала, что настолько точно можно рассказать о человеке. По крайней мере - детство описано точно, основные черты характера, <span>даже мой муж действительно вообще не соответствует мне</span>и наш союз вызывает у окружающих удивление (он, даже, ростом ниже). В общем очень много совпадений. </p>
+            </div>
+            <div class="review__bottom">
+              <div itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person">
+                <p class="review__name" itemprop="name">Анна</p>
+              </div>
+              <div class="review__starts" itemprop="reviewRating" itemscope="itemscope" itemtype="https://schema.org/Rating">
+                <meta content="1" itemprop="worstRating"/><span content="5" itemprop="ratingValue"><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/><img class="review__star" src="/img/svg/star.svg" alt="star"/></span>
+                <meta content="5" itemprop="bestRating"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="horoscope-info">
+      <div class="container"><img class="horoscope-info__photo" src="/img/horoscope_image.jpg" alt="horoscope_image"/>
+        <div class="horoscope-info__wrapper">
+          <h2 class="horoscope-info__title js-horoscope-info-title">Любовный гороскоп. Почему так важно это знать?</h2>
+        </div>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="container">
+        <h2 class="banner__title">Узнайте еще больше о себе </h2>
+        <button class="btn btn-primary banner__btn" type="button">Получить гороскоп</button>
+      </div>
+    </section>
+    <section class="natal-chart">
+      <div class="container">
+        <div class="natal-chart__top">
+          <h2 class="natal-chart__title">Заголовок для ссылок в несколько строк</h2>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="natal-chart-tab" data-bs-toggle="tab" data-bs-target="#natal-chart" type="button" role="tab" aria-controls="natal-chart" aria-selected="true">Натальная карта</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="false">Дома</button>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="natal-chart" role="tabpanel" aria-labelledby="natal-chart-tab">
+            <ul class="tab-list">
+              <li class="tab-list__item tab-list__item--purple"> 
+                <p class="tab-list__text">Аспекты в натальной карте</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--yellow"> 
+                <p class="tab-list__text">Квадраты в натальной карте</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--orange"> 
+                <p class="tab-list__text">Соединение в натальной карте</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--purple"> 
+                <p class="tab-list__text">Узлы в натальной карте</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--yellow">
+                <p class="tab-list__text"> Луна в натальной карте</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--orange"> 
+                <p class="tab-list__text">Марс в натальной карте</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--purple"> 
+                <p class="tab-list__text">Меркурий в натальной карте</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--yellow"> 
+                <p class="tab-list__text">Нептун в натальной карте</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--orange"> 
+                <p class="tab-list__text">Плутон в натальной карте</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--purple"> 
+                <p class="tab-list__text">Сатурн в натальной карте</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--yellow"> 
+                <p class="tab-list__text">Солнце в натальной карте</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--orange"> 
+                <p class="tab-list__text">Уран в натальной карте</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--purple"> 
+                <p class="tab-list__text">Юпитер в натальной карте</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <ul class="tab-list">
+              <li class="tab-list__item tab-list__item--purple">
+                <p class="tab-list__text">Солнце в 1 дома</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--yellow">
+                <p class="tab-list__text">Солнце в 3 доме</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--orange">
+                <p class="tab-list__text">Луна в 1 доме</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--purple">
+                <p class="tab-list__text">Луна в 8 доме</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--yellow">
+                <p class="tab-list__text">Венера в 9 доме</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--orange"> 
+                <p class="tab-list__text">Марс в 8 доме</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--purple"> 
+                <p class="tab-list__text">Марс в 12 доме</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--yellow"> 
+                <p class="tab-list__text">Сатурн в 7 доме</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--orange"> 
+                <p class="tab-list__text">Сатурн в 8 доме</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--purple"> 
+                <p class="tab-list__text">Юпитер в 8 доме</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--yellow"> 
+                <p class="tab-list__text">Уран в 8 доме</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+              <li class="tab-list__item tab-list__item--orange"> 
+                <p class="tab-list__text">Нептун в 5 доме</p>
+                <div class="tab-list__icon"><i class="fico fico-arrowS"></i></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="check-love">
+      <div class="container">
+        <div class="check-love__top">
+          <h2 class="check-love__title">Проверьте, что вас ждет в любви</h2>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="zodiac-tab" data-bs-toggle="tab" data-bs-target="#zodiac" type="button" role="tab" aria-controls="zodiac" aria-selected="true">По зодиаку</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="time-tab" data-bs-toggle="tab" data-bs-target="#time" type="button" role="tab" aria-controls="time" aria-selected="false">По времени</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="month-tab" data-bs-toggle="tab" data-bs-target="#month" type="button" role="tab" aria-controls="month" aria-selected="false">По месяцам</button>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="zodiac" role="tabpanel" aria-labelledby="zodiac-tab">
+            <div class="check-love__list">
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/oven.svg" alt="Овен"/></div>
+                    <p class="cart-item__text">Овен</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/telec.svg" alt="Телец"/></div>
+                    <p class="cart-item__text">Телец</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/bliznetsyi.svg" alt="Близнецы"/></div>
+                    <p class="cart-item__text">Близнецы</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/rak.svg" alt="Рак"/></div>
+                    <p class="cart-item__text">Рак</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/lev.svg" alt="Лев"/></div>
+                    <p class="cart-item__text">Лев</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/deva.svg" alt="Дева"/></div>
+                    <p class="cart-item__text">Дева</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/vesyi.svg" alt="Весы"/></div>
+                    <p class="cart-item__text">Весы</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/skorpion.svg" alt="Скорпион"/></div>
+                    <p class="cart-item__text">Скорпион</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/strelets.svg" alt="Стрелец"/></div>
+                    <p class="cart-item__text">Стрелец</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/kozerog.svg" alt="Козерог"/></div>
+                    <p class="cart-item__text">Козерог</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/vodoley.svg" alt="Водолей"/></div>
+                    <p class="cart-item__text">Водолей</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/ryibyi.svg" alt="Рыбы"/></div>
+                    <p class="cart-item__text">Рыбы</p>
+                  </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="time" role="tabpanel" aria-labelledby="time-tab">
+            <div class="check-love__list">
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/today.svg" alt="Сегодня"/></div>
+                    <p class="cart-item__text">Сегодня</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/week.svg" alt="Неделя"/></div>
+                    <p class="cart-item__text">Неделя</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/month.svg" alt="Месяц"/></div>
+                    <p class="cart-item__text">Месяц</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/year.svg" alt="Год"/></div>
+                    <p class="cart-item__text">Год</p>
+                  </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="month" role="tabpanel" aria-labelledby="month-tab">
+            <div class="check-love__list">
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/january.svg" alt="Январь"/></div>
+                    <p class="cart-item__text">Январь</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/february.svg" alt="Февраль"/></div>
+                    <p class="cart-item__text">Февраль</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/march.svg" alt="Март"/></div>
+                    <p class="cart-item__text">Март</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/april.svg" alt="Апрель"/></div>
+                    <p class="cart-item__text">Апрель</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/may.svg" alt="Май"/></div>
+                    <p class="cart-item__text">Май</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/june.svg" alt="Июнь"/></div>
+                    <p class="cart-item__text">Июнь</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/july.svg" alt="Июль"/></div>
+                    <p class="cart-item__text">Июль</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/august.svg" alt="Август"/></div>
+                    <p class="cart-item__text">Август</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/september.svg" alt="Сентябрь"/></div>
+                    <p class="cart-item__text">Сентябрь</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/october.svg" alt="Октябрь"/></div>
+                    <p class="cart-item__text">Октябрь</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/november.svg" alt="Ноябрь"/></div>
+                    <p class="cart-item__text">Ноябрь</p>
+                  </div>
+                  <div class="cart-item">
+                    <div class="cart-item__wrap-ico"><img src="/img/svg/december.svg" alt="Декабрь"/></div>
+                    <p class="cart-item__text">Декабрь</p>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <ul class="footer__list list-f">
+            <li class="list-f__item list-f__item--main">Персональные сервисы</li>
+            <li class="list-f__item"><a class="list-f__link" href="">Планеты в знаках зодика</a></li>
+            <li class="list-f__item"><a class="list-f__link" href="">Конвертер времени</a></li>
+            <li class="list-f__item"><a class="list-f__link" href="">Ректификация</a></li>
+            <li class="list-f__item"><a class="list-f__link" href="">И-цзин</a></li>
+          </ul>
+          <ul class="footer__list list-f">
+            <li class="list-f__item list-f__item--main">Партнерам</li>
+            <li class="list-f__item"><a class="list-f__link" href="">Для астрологов</a></li>
+            <li class="list-f__item"><a class="list-f__link" href="">Партнерская программа</a></li>
+          </ul>
+          <ul class="footer__list list-f">
+            <li class="list-f__item list-f__item--main">Про компанию</li>
+            <li class="list-f__item"><a class="list-f__link" href="">Пользовательское соглашение</a></li>
+            <li class="list-f__item"><a class="list-f__link" href="">Политика конфиденциальности</a></li>
+            <li class="list-f__item"><a class="list-f__link" href="">Использование cookies</a></li>
+          </ul>
+          <ul class="footer__list list-f">
+            <li class="list-f__item list-f__item--main">Контакты</li>
+            <li class="list-f__item"><a class="list-f__link" href="mailto:q@astromix.net">q@astromix.net</a></li>
+            <li class="list-f__item list-f__item--social"><a class="list-f__link" href="" target="_blank"><i class="fico fico-fb"></i></a><a class="list-f__link" href="" target="_blank"><i class="fico fico-insta"></i></a><a class="list-f__link" href="" target="_blank"><i class="fico fico-pin"></i></a><a class="list-f__link" href="" target="_blank"><i class="fico fico-i"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copy">© Сервис создания гороскопов Astromix. Все права защищены 2018-2021. Vivabelle Limited</p>
+          <div class="footer__pay"><img src="/img/svg/visa.svg" alt="visa"/><img src="/img/svg/mastercart.svg" alt="mastercart"/></div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup-certificates"><img class="popup-certificates__close js-close-popup-certificates" src="/img/svg/close.svg" alt="close"/>
+      <div class="popup-certificates__wrapper">
+        <div class="container">
+          <div class="popup-certificates__slider js-popup-certificates">
+            <div class="popup-certificates__wrap-photo"><img class="popup-certificates__photo" src="/img/certificate_big_1.jpg" alt="certificat0"/></div>
+            <div class="popup-certificates__wrap-photo"><img class="popup-certificates__photo" src="/img/certificate_big_2.jpg" alt="certificat1"/></div>
+            <div class="popup-certificates__wrap-photo"><img class="popup-certificates__photo" src="/img/certificate_big_3.jpg" alt="certificat2"/></div>
+            <div class="popup-certificates__wrap-photo"><img class="popup-certificates__photo" src="/img/certificate_big_4.jpg" alt="certificat3"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
