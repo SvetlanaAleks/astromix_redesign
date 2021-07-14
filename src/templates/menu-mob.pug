@@ -10,9 +10,6 @@ mixin menu-mob(page)
 				li.nav-item
 					a.nav-link(href='#')!= MENU.blog
 				li.nav-item.dropdown
-					a#navbarDropdown.nav-link.dropdown-toggle(href="#" role='button' data-bs-toggle='dropdown' aria-expanded='false') #{LANG.locale==='ru'?'Рус':'Eng'}
-					ul.dropdown-menu(aria-labelledby='navbarDropdown')
-						li
-							a.dropdown-item(href=url(LANG.locale ==='ru'?'en':'', `/${page}.html`)) #{LANG.locale==='ru'?'Eng':'Рус'}
+					a.dropdown-item(href=url(LANG.locale ==='ru'?'en':'', `/${page}.html`)) #{LANG.locale==='ru'?'English':'Русский'}
 			.menu-mobile__bottom
 				a.menu-mobile__btn.btn.btn-outline-primary.js-scroll(href="#")!= LANG.btn_primary

@@ -1,4 +1,5 @@
 import { DOC } from "../global/constants";
+import noScroll from "../global/noScroll";
 const Menu = (function () {
   "use strict";
   const burgerMenu = $(".js-burger");
@@ -31,6 +32,11 @@ const Menu = (function () {
         const target = $($(this).data("target"));
         target.toggleClass("menu-mobile--active");
         burgerMenu.toggleClass("burger--active");
+        if (target.hasClass("menu-mobile--active")) {
+          noScroll.on();
+        } else {
+          noScroll.off();
+        }
       });
     },
     scrollToTarget: function () {
@@ -39,10 +45,8 @@ const Menu = (function () {
         const _this = $(this);
         const href = _this.attr("href");
         const target = $(href);
-
         $(".menu-mobile").removeClass("menu-mobile--active");
         burgerMenu.removeClass("burger--active");
-
         const top = target.offset().top;
         $("html, body").animate(
           {
