@@ -181,6 +181,10 @@
 			transform: translateY(-50%)
 			background: rgba(47, 5, 110, 0.4)
 		+r(768)
+			max-width: 570px
+			width: 100%
+			margin: auto
+			margin-bottom: 40px
 			&::before
 				width: calc(100% - 310px)
 				right: 90px
@@ -193,20 +197,22 @@
 		display: flex
 		align-items: center
 		+r(768)
+			max-width: 570px
+			width: 100%
+			margin: auto
 			.slick-dots
 				position: absolute
 				top: -54px
 				right: 0
-			.slick-list
-				margin: -20px
 			.slick-slide
-				margin: 20px
+				margin: 4px 10px
+				width: 175px
 		+r(575)
-			.slick-list
-				margin: -10px
 			.slick-slide
-				margin: 10px
+				width: 165px
 		+r(479)
+			.slick-slide
+				width: 160px
 			.slick-dots
 				top: -35px
 	&__certificate
@@ -298,6 +304,9 @@
 			height: 410px
 		+r(768)
 			height: 290px
+			box-shadow: 5px 5px 0px rgba(47, 5, 110, 0.35)
+			border-radius: 10px
+			margin-bottom: 5px
 		+r(575)
 			height: 230px
 		+r(479)

@@ -18,24 +18,24 @@ const Sliders = (function () {
         isCertificatesSliderDesc = false;
       }
     },
+
     initCertificatesMob: function () {
-      $(".js-certificates-mob")
-        .not(".slick-initialized")
-        .slick({
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          dots: true,
-          arrows: false,
-          responsive: [
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-              },
-            },
-          ],
-        });
+      $(".js-certificates-mob").not(".slick-initialized").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        variableWidth: true,
+        // responsive: [
+        //   {
+        //     breakpoint: 480,
+        //     settings: {
+        //       // slidesToShow: 2,
+        //       // slidesToScroll: 1,
+        //     },
+        //   },
+        // ],
+      });
       isCertificatesSliderMob = true;
     },
     closePopupCertificates: function () {

@@ -16,7 +16,7 @@ $(function () {
 
   layout.layoutHandler({
     onInit: (layout) => {
-      if (layout.WIN_WIDTH < 769) {
+      if (layout.WIN_WIDTH <= 769) {
         Sliders.initCertificatesMob();
       } else {
         Sliders.destroyCertificatesMob();
