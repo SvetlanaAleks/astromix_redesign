@@ -1,6 +1,13 @@
 - var MENU = LANG.menu;
 mixin menu-mob(page)
 	.menu-mobile#js-mobile-menu
+		.menu-mobile__top
+			a.navbar-brand(href=url(LANG, 'index.html'))
+				img(src="img/svg/logo.svg", alt="astromix")
+			.burger.js-burger(data-target="#js-mobile-menu")
+				.burger__line
+				.burger__line
+				.burger__line
 		.menu-mobile__wrap
 			ul.menu-mobile__nav.nav.navbar-nav
 				li.nav-item
